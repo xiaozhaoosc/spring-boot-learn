@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:2181/eureka/
+  instance:
+    status-page-url: https://${eureka.hostname}/info
+    health-check-url: https://${eureka.hostname}/health
+    home-page-url: https://${eureka.hostname}/
+server:
+  port: 2183
+spring:
+  application:
+    name: service-demo
