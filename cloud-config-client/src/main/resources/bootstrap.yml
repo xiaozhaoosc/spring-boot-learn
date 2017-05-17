@@ -1,6 +1,11 @@
 spring:
+  application:
+    name: config-client
   cloud:
     config:
-      uri: http://127.0.0.1:${config.port:8888}
+      uri: http://localhost:${config.port:8081}/
       name: cloud-config
       profile: ${config.profile:dev}
+      label: ${config.label:master}
+server:
+  port: 8083
