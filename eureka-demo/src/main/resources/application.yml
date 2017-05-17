@@ -1,13 +1,5 @@
-eureka:
-  client:
-    service-url:
-      defaultZone: http://${eureka.hostname}:${eureka.service.port.center}/eureka/
-  instance:
-    status-page-url: https://${eureka.hostname}/info
-    health-check-url: https://${eureka.hostname}/health
-    home-page-url: https://${eureka.hostname}/
 server:
   port: ${eureka.service.port.base}
 spring:
   application:
-    name: service-base
+    name: ${eureka.service.name.base}

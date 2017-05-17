@@ -1,0 +1,19 @@
+
+spring:
+  cloud:
+    config:
+#      uri: http://localhost:${config.port:8081}/
+      name: cloud-config
+      profile: ${config.profile:dev}
+      label: ${config.label:master}
+      discovery:
+        enabled: true
+        service-id: cloud-config-service
+eureka:
+  client:
+    service-url:
+      defaultZone: ${eureka.url:http://localhost:2181/eureka/}
+  instance:
+    status-page-url: https://${eureka.hostname}/info
+    health-check-url: https://${eureka.hostname}/health
+    home-page-url: https://${eureka.hostname}/
