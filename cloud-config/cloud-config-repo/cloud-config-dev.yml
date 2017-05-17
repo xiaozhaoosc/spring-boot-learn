@@ -1,2 +1,8 @@
 foo:
-  foo versino 3
+  foo versino dev
+eureka:
+  service:
+    center:
+      port:2181
+  hostname:
+    localhost

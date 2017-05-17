@@ -8,3 +8,9 @@ spring:
           uri: https://github.com/xiaozhaoosc/spring-boot-learn.git
           search-paths: cloud-config/cloud-config-repo
       label: master
+  application:
+    name: cloud-config-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:2181/eureka/

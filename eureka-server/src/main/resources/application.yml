@@ -1,8 +1,8 @@
 server:
-  port: 2181
+  port: ${eureka.service.center.port}
 eureka:
   instance:
-    hostname: 127.0.0.1
+    hostname: ${eureka.hostname}
   client:
     register-with-eureka: false
     fetch-registry: false
