@@ -2,7 +2,14 @@ foo:
   foo versino dev
 eureka:
   service:
-    center:
-      port:2181
+    port:
+      center: 2181
+      base: 2191
+      feign: 2192
+      ribbon: 2193
+    name:
+      base: service-base
+      feign: service-feign
+      ribbon: service-ribbon
   hostname:
     localhost
