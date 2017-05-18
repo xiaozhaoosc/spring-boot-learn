@@ -13,3 +13,8 @@ eureka:
       ribbon: service-ribbon
   hostname:
     localhost
+my-rabbitmq:
+  host: localhost
+  port: 15672
+  username: qicai
+  password: qicai123

@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: ${eureka.service.name.base}
+  rabbitmq:
+    host: ${my-rabbitmq.host}
+    port: ${my-rabbitmq.port}
+    username: ${my-rabbitmq.username}
+    password: ${my-rabbitmq.password}
