@@ -1,5 +1,5 @@
 foo:
-  foo versino dev
+  foo versino dev 2
 eureka:
   service:
     port:
