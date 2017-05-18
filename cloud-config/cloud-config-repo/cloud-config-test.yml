@@ -1,6 +1,5 @@
 foo:
   foo versino test
-
 eureka:
   service:
     port:
